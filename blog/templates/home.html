@@ -9,11 +9,14 @@
     
 
     {% for post in posts %}
-        <ul>
-            <li>
-                {{ post }}
-            </li>
-        </ul>
+        <div>
+            <ul>
+                <li>
+                    <h2>{{ post.title }}</h2>
+                    <p>{{ post.body }}</p>
+                </li>
+            </ul>
+        </div>
     {% endfor %}
 
 
